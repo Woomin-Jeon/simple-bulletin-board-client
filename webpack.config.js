@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve( __dirname, 'dist/'),
     filename: 'main.js',
-    publicPath: '/'
+    // publicPath: '/'
   },
   module: {
     rules: [
@@ -30,5 +31,10 @@ module.exports = {
       template: './index.html',
       filename: 'index.html',
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/images', to: './src/images' }
+      ]
+    })
   ],
 };
