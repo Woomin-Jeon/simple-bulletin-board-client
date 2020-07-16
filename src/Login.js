@@ -1,5 +1,7 @@
 import React from 'react';
 
+import sha256 from 'crypto-js/sha256';
+
 const styles = {
   title: {
     fontSize: '20px',
@@ -15,7 +17,10 @@ export default function Login({ setState, setPw, pw }) {
 
   const click = (e) => {
     e.preventDefault();
-    setState(pw);
+
+    const hashDigest = sha256(pw).words.join("");
+
+    setState(hashDigest);
     setPw("");
   }
 
