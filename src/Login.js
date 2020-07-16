@@ -3,11 +3,37 @@ import React from 'react';
 import sha256 from 'crypto-js/sha256';
 
 const styles = {
+  god: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundImage: 'url(../src/images/background.png)',
+    height: '-webkit-fill-available'
+  },
+  main: {
+    fontFamily: 'Helvetica',
+    display: 'flex',
+    marginTop: '100px',
+    border: '1px solid',
+    padding: '100px',
+    background: 'white'
+  },
   title: {
-    fontSize: '20px',
+    fontSize: '40px',
     fontWeight: 'bold',
     marginBottom: '20px',
   },
+  input: {
+    marginTop: '23px',
+    width: '430px',
+  },
+  form: {
+    fontSize: '20px',
+  },
+  img: {
+    width: '110px',
+    marginRight: '20px',
+  }
 }
 
 export default function Login({ setState, setPw, pw }) {
@@ -25,14 +51,21 @@ export default function Login({ setState, setPw, pw }) {
   }
 
   return (
-    <div>
-      <div css={styles.title}>
-        LogLab ERP System™
+    <div css={styles.god}>
+      <div css={styles.main}>
+        {/* <img css={styles.img} src="../src/images/graphic.png" /> */}
+        <div>
+          <div css={styles.title}>
+            LogLab ERP System™
+          </div>
+          <div css={styles.input}>
+            <form>
+              <input css={styles.form} placeholder="Enter password" type="password" value={pw} onChange={e=> getPassword(e.target.value)}/>
+              <button css={styles.form} type="submit" onClick={(e) => click(e)} >Enter</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <form>
-        <input placeholder="Enter password" type="password" value={pw} onChange={e=> getPassword(e.target.value)}/>
-        <button type="submit" onClick={(e) => click(e)} >Enter</button>
-      </form>
     </div>
   );
 }
