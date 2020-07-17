@@ -6,17 +6,17 @@ const styles = {
   god: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
     backgroundImage: 'url(../src/images/background.png)',
     height: '-webkit-fill-available'
   },
   main: {
     fontFamily: 'Helvetica',
     display: 'flex',
-    marginTop: '100px',
+    justifyContent: 'center',
     border: '1px solid',
-    padding: '100px',
-    background: 'white'
+    width: '100%',
+    background: 'white',
+    padding: '80px 0 80px 0',
   },
   title: {
     fontSize: '40px',
@@ -53,7 +53,7 @@ export default function Login({ setState, setPw, pw }) {
   return (
     <div css={styles.god}>
       <div css={styles.main}>
-        {/* <img css={styles.img} src="../src/images/graphic.png" /> */}
+        <img css={styles.img} src="../src/images/graphic.png" />
         <div>
           <div css={styles.title}>
             LogLab ERP System™

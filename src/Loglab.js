@@ -86,7 +86,7 @@ export default function PCB() {
         </div>
         <iframe
           css={styles.excel}
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQopZ2UOBkDyDnK0_RoVPI0Sa1w6-pdgt6DQxEPSUfH2gxgFJxhaoRWDes7NujRIdWQN6V_-KEV1cCz/pubhtml?widget=true&amp;headers=true"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkNEl6icOxxng5EyCZmIWGQj9DWxEqvwuWYXC_QB0Zxa5WDjuXEKgkBc881-qxzLsPsI7d9c58zfPd/pubhtml?widget=true&amp;headers=false"
         >Use Chrome Browser, please.</iframe>
       </div>
 
