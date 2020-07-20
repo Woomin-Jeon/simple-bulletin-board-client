@@ -32,7 +32,7 @@ const styles = {
   },
   excel: {
     width: "100%",
-    height: "65vh",
+    height: `${screen.height - 450}px`,
     border: "1px solid"
   },
   italic: {
@@ -43,7 +43,8 @@ const styles = {
   }
 }
 
-export default function PCB() {
+export default function LogLab() {
+  console.log(screen.height);
   return (
     <div css={styles.whole}>
       <h3>(Loglab loginned) Demo page</h3>

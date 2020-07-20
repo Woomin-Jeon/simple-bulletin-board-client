@@ -32,7 +32,7 @@ const styles = {
   },
   excel: {
     width: "100%",
-    height: "72vh",
+    height: `${screen.height - 400}px`,
     border: "1px solid"
   },
   italic: {
