@@ -2,15 +2,15 @@ import React from 'react';
 
 const styles = {
   whole: {
-    fontFamily: 'Helvetica',
+    fontFamily: 'Helvetica'
   },
   box: {
     display: "flex",
     fontWeight: 'bold',
-    fontSize: '16px',
+    fontSize: '16px'
   },
   title: {
-    float: 'right',
+    float: 'right'
   },
   titleTop: {
     float: 'right',
@@ -19,16 +19,16 @@ const styles = {
     top: '12px'
   },
   value: {
-    marginLeft: '20px',
+    marginLeft: '20px'
   },
   flag: {
     maxWidth: "40px",
     marginLeft: "15px",
     position: "relative",
-    top: "4px",
+    top: "4px"
   },
   provide: {
-    float: 'right',
+    float: 'right'
   },
   excel: {
     width: "100%",
@@ -36,10 +36,10 @@ const styles = {
     border: "1px solid"
   },
   italic: {
-    fontStyle: "italic",
+    fontStyle: "italic"
   },
   bold: {
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   }
 }
 

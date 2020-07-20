@@ -16,23 +16,23 @@ const styles = {
     border: '1px solid',
     width: '100%',
     background: 'white',
-    padding: '80px 0 80px 0',
+    padding: '80px 0 80px 0'
   },
   title: {
     fontSize: '40px',
     fontWeight: 'bold',
-    marginBottom: '20px',
+    marginBottom: '20px'
   },
   input: {
     marginTop: '23px',
-    width: '430px',
+    width: '430px'
   },
   form: {
-    fontSize: '20px',
+    fontSize: '20px'
   },
   img: {
     width: '110px',
-    marginRight: '20px',
+    marginRight: '20px'
   }
 }
 
