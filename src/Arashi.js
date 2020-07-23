@@ -32,7 +32,7 @@ const styles = {
   },
   excel: {
     width: "100%",
-    height: `${screen.height - 350}px`,
+    height: `${screen.height - 360}px`,
     border: "1px solid"
   },
   italic: {
@@ -44,15 +44,16 @@ const styles = {
 }
 
 const data = {
-  logo: "../src/images/LogLab-logo.png",
-  flag: "../src/images/LogLab-flag.png",
-  customerName: "LogLab, Korea",
-  customerId: "1",
-  inCharge: "Ms. Tom Park",
-  excelURL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQopZ2UOBkDyDnK0_RoVPI0Sa1w6-pdgt6DQxEPSUfH2gxgFJxhaoRWDes7NujRIdWQN6V_-KEV1cCz/pubhtml?widget=true&amp;headers=false"
+  logo: "../src/images/Arashi-logo.png",
+  flag: "../src/images/Arashi-flag.png",
+  customerName: "I Trend Tech Co. Ltd, Taiwan",
+  customerId: "105",
+  inCharge: "Mr. Patrick Tu 涂程詠",
+  excelURL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSoQUMYkYcR1OGYkEkOiOaGzbZC0dEMfpJtTBzY_yiE9OyAnZK3fENBda2lTqmpg8eOZXPMgheda_c2/pubhtml?widget=true&amp;headers=false"
 };
 
 export default function LogLab() {
+  console.log(screen.height);
   return (
     <div css={styles.whole}>
       <img src={data.logo} />

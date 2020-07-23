@@ -45,7 +45,7 @@ export default function Login({ setState, setPw, pw }) {
     e.preventDefault();
 
     const hashDigest = sha256(pw).words.join("");
-
+    
     setState(hashDigest);
     setPw("");
   }

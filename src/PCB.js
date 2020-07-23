@@ -43,10 +43,19 @@ const styles = {
   }
 }
 
+const data = {
+  logo: "../src/images/PCB-logo.png",
+  flag: "../src/images/PCB-flag.png",
+  customerName: "PCB Technologies, Israel",
+  customerId: "101",
+  inCharge: "Ms. Eti Ben-David",
+  excelURL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkNEl6icOxxng5EyCZmIWGQj9DWxEqvwuWYXC_QB0Zxa5WDjuXEKgkBc881-qxzLsPsI7d9c58zfPd/pubhtml?widget=true&amp;headers=false"
+};
+
 export default function PCB() {
   return (
     <div css={styles.whole}>
-      <img src="../src/images/PCB-logo.png" />
+      <img src={data.logo} />
       <br/>
       <br/>
       <div css={styles.box}>
@@ -65,14 +74,14 @@ export default function PCB() {
         </div>
         <div css={styles.value}>
           <div>
-            <span >PCB Technologies, Israel</span>
-            <img css={styles.flag} src="../src/images/PCB-flag.png" />
+            <span >{data.customerName}</span>
+            <img css={styles.flag} src={data.flag} />
           </div>
           <div>
-            101
+            {data.customerId}
           </div>
           <div>
-            Ms. Eti Ben-David
+            {data.inCharge}
           </div>
         </div>
       </div>
@@ -85,7 +94,7 @@ export default function PCB() {
         </div>
         <iframe
           css={styles.excel}
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkNEl6icOxxng5EyCZmIWGQj9DWxEqvwuWYXC_QB0Zxa5WDjuXEKgkBc881-qxzLsPsI7d9c58zfPd/pubhtml?widget=true&amp;headers=false"
+          src={data.excelURL}
         >Use Chrome Browser, please.</iframe>
       </div>
 
