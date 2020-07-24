@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CryptoJS from 'crypto-js';
+
 const styles = {
   whole: {
     fontFamily: 'Helvetica'
@@ -49,11 +51,10 @@ const data = {
   customerName: "I Trend Tech Co. Ltd, Taiwan",
   customerId: "105",
   inCharge: "Mr. Patrick Tu 涂程詠",
-  excelURL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSoQUMYkYcR1OGYkEkOiOaGzbZC0dEMfpJtTBzY_yiE9OyAnZK3fENBda2lTqmpg8eOZXPMgheda_c2/pubhtml?widget=true&amp;headers=false"
+  excelURL: "U2FsdGVkX1+DWlQec2NKFBIGScCHqiyOVnbZVi8msNeq0+cdG/r+/JEecXWuUjJuaKmS2A2De+6FCd/UV6zB4cinQbeufuUFVRjufzGUvdfQLpbunL7OYz2Xf720qq9ktuaXtqsIxyaW08daSfJlugM7wimBDpg7ZHVYcJQDQnOwowJVm+0eClZW7eBSlfKaASpy0w4JTVuhrM4Cw8dEH4359Vj3KuPUvy3MHGpK9Ni7TEVexxAMcV35lSXBwRNP"
 };
 
 export default function LogLab() {
-  console.log(screen.height);
   return (
     <div css={styles.whole}>
       <img src={data.logo} />
@@ -95,7 +96,7 @@ export default function LogLab() {
         </div>
         <iframe
           css={styles.excel}
-          src={data.excelURL}
+          src={CryptoJS.AES.decrypt(data.excelURL, 'dal96k@hanmail.net').toString(CryptoJS.enc.Utf8)}
         >Use Chrome Browser, please.</iframe>
       </div>
 

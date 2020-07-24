@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CryptoJS from 'crypto-js';
+
 const styles = {
   whole: {
     fontFamily: 'Helvetica'
@@ -49,7 +51,7 @@ const data = {
   customerName: "PCB Technologies, Israel",
   customerId: "101",
   inCharge: "Ms. Eti Ben-David",
-  excelURL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkNEl6icOxxng5EyCZmIWGQj9DWxEqvwuWYXC_QB0Zxa5WDjuXEKgkBc881-qxzLsPsI7d9c58zfPd/pubhtml?widget=true&amp;headers=false"
+  excelURL: "U2FsdGVkX1++6DSMnpla06ITRLGjqEXfb3BpjC9kj1xPaa3Vp9tJ58qQTJcVUwvpW6ey8TAUpVrLZ0ozi7xrTguXpa1qAN0avg4vlOrxpGXpcqdKfjKnHT9sug9SVc/7zFNHeqVjEzZ0d5rS7iBGtlRnrPnmkX+T1sDDOrS+fTz01vgeCiQea0SWthy07qIQOElbpEy4OLUDheHw7H2a4mpPWCJWgdCX5MtfTge0NqZWNxnHoAeyZOBDugP79YoP"
 };
 
 export default function PCB() {
@@ -94,7 +96,7 @@ export default function PCB() {
         </div>
         <iframe
           css={styles.excel}
-          src={data.excelURL}
+          src={CryptoJS.AES.decrypt(data.excelURL, 'dal96k@hanmail.net').toString(CryptoJS.enc.Utf8)}
         >Use Chrome Browser, please.</iframe>
       </div>
 
