@@ -7,18 +7,8 @@ const styles = {
     fontFamily: 'Helvetica'
   },
   box: {
-    display: "flex",
     fontWeight: 'bold',
     fontSize: '16px'
-  },
-  title: {
-    float: 'right'
-  },
-  titleTop: {
-    float: 'right',
-    height: '32px',
-    position: 'relative',
-    top: '12px'
   },
   value: {
     marginLeft: '20px'
@@ -42,7 +32,18 @@ const styles = {
   },
   bold: {
     fontWeight: 'bold'
-  }
+  },
+  customerName: {
+    marginRight: '20px',
+  },
+  customerId: {
+    marginRight: '20px',
+    marginLeft: '27px',
+  },
+  inCharge: {
+    marginRight: '20px',
+    marginLeft: '48px',
+  },
 }
 
 const data = {
@@ -62,34 +63,18 @@ export default function LogLab() {
       <br/>
       <div css={styles.box}>
         <div>
-          <div css={styles.titleTop}>
-            Customer Name:
-          </div>
-          <br/>
-          <div css={styles.title}>
-            Customer ID:
-          </div>
-          <br/>
-          <div css={styles.title}>
-            In Charge:
-          </div>
-        </div>
-        <div css={styles.value}>
-          <div>
-            <span >{data.customerName}</span>
-            <img css={styles.flag} src={data.flag} />
-          </div>
-          <div>
-            {data.customerId}
-          </div>
-          <div>
-            {data.inCharge}
-          </div>
+          <span css={styles.customerName}>Customer Name: </span>
+          <span>{data.customerName}</span>
+          <img css={styles.flag} src={data.flag} />
+          <br />
+          <span css={styles.customerId}>Customer ID: </span>
+          <span>{data.customerId}</span>
+          <br />
+          <span css={styles.inCharge}>In Charge: </span>
+          <span>{data.inCharge}</span>
         </div>
       </div>
-
       <br/>
-
       <div>
         <div css={styles.provide}>
           <span css={styles.italic}>Provided by</span><span css={styles.bold}> LogLab ERP System™</span>
@@ -99,7 +84,6 @@ export default function LogLab() {
           src={CryptoJS.AES.decrypt(data.excelURL, 'dal96k@hanmail.net').toString(CryptoJS.enc.Utf8)}
         >Use Chrome Browser, please.</iframe>
       </div>
-
     </div>
   );
 }
