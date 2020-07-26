@@ -3,12 +3,6 @@ import React from 'react';
 import sha256 from 'crypto-js/sha256';
 
 const styles = {
-  god: {
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundImage: 'url(../src/images/background.png)',
-    height: '-webkit-fill-available'
-  },
   main: {
     fontFamily: 'Helvetica',
     display: 'flex',
@@ -33,7 +27,11 @@ const styles = {
   img: {
     width: '110px',
     marginRight: '20px'
-  }
+  },
+  background: {
+    backgroundImage: "url(../src/images/background.png)",
+    height: `${screen.height - 150}px`,
+  },
 }
 
 export default function Login({ setState, setPw, pw }) {
@@ -51,7 +49,7 @@ export default function Login({ setState, setPw, pw }) {
   }
 
   return (
-    <div css={styles.god}>
+    <div css={styles.background}>
       <div css={styles.main}>
         <img css={styles.img} src="../src/images/graphic.png" />
         <div>
