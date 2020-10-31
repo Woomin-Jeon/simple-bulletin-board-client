@@ -52,7 +52,7 @@ const data = {
   customerName: "BusBoard Prototype Systems LTD., Canada",
   customerId: "604",
   inCharge: "Scott Kornak",
-  excelURL: "U2FsdGVkX1+lJN+Hnc6HwE+GauHbwARJP+wEHcOzKT1zlZLKW3qz08nTiBnwqut5oizyjEJKYV24v6xxSkWyYViZUzcSMguE4JZopLskeNZjYRkWv8t/EQQsUR4KZxdF1VkXmXYatheYx892GjTSMyENXqYh/pbrX+RNe1oJhrLtjSbG1Ril8DQkpmOA1ewiEB7zYdGdcMEamsVKzFYGXQ=="
+  excelURL: "U2FsdGVkX1+WyYZRpseCVFI/9k6MZuOSlbJA8f/BVU7K2ph8euMhnJAxBCCwn8SMPky46+fajcRjdAgslC1TVevtozSj8S3a29fK5iLBiXuSCDiJ7uIwvfc12jlFive8+quXvjsESEvnhd7sZUajYF2MrHjNV7hQ9OCwIEfHNFsM0pTbrli1govFgqicKQ/F8Odie9VlHBr8MHbKWy/535PKam0acqYec757cRHXo43Chz2UntU8DrFF1DxSYzhf",
 };
 
 export default function BPS() {
