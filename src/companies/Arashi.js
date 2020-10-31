@@ -55,7 +55,7 @@ const data = {
   excelURL: "U2FsdGVkX1+DWlQec2NKFBIGScCHqiyOVnbZVi8msNeq0+cdG/r+/JEecXWuUjJuaKmS2A2De+6FCd/UV6zB4cinQbeufuUFVRjufzGUvdfQLpbunL7OYz2Xf720qq9ktuaXtqsIxyaW08daSfJlugM7wimBDpg7ZHVYcJQDQnOwowJVm+0eClZW7eBSlfKaASpy0w4JTVuhrM4Cw8dEH4359Vj3KuPUvy3MHGpK9Ni7TEVexxAMcV35lSXBwRNP"
 };
 
-export default function LogLab() {
+export default function Arashi() {
   return (
     <div css={styles.whole}>
       <img src={data.logo} />
